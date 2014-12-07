@@ -1,13 +1,47 @@
 {
   "name": "better-js",
   "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
   "description": "Transpiler for the good parts (tm)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "nodemon --exec \"npm run test\"",
+    "install-hooks": "cp hooks/* .git/hooks/",
+    "jshint": "find lib -name '*.js' | xargs jshint -c .jshintrc",
+    "jscs": "jscs --config .jscsrc lib/",
+    "test": "npm run npm run test-coverage && npm run jshint && npm run jscs",
+    "test-coverage": "istanbul cover _mocha --report lcovonly test/test-*.js",
+    "coveralls": "cat coverage/lcov.info | coveralls"
   },
   "author": "Nerdlabs Team <nerds@nerdlabs.it>",
-  "license": "BSD-2-Clause",
+  "contributors": [
+    {
+      "name": "Robert Kowalski",
+      "email": "email"
+    }, {
+      "name": "ZauberNerd",
+      "email": "email"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:nerdlabs/better-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nerdlabs/better-js/issues"
+  },
+  "devDependencies": {
+    "nodemon": "^1.2.1",
+    "jshint": "~2.5.6",
+    "jscs": "~1.7.1",
+    "istanbul": "~0.3.2",
+    "mocha": "~1.21.4",
+    "mocha-lcov-reporter": "0.0.1",
+    "coveralls": "~2.11.2",
+    "chai": "~1.9.2",
+    "sinon": "~1.10.3"
+  },
   "dependencies": {
     "escodegen": "~1.4.1",
     "estraverse": "~1.8.0",
