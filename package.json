@@ -10,6 +10,7 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "escodegen": "~1.4.1",
-    "estraverse": "~1.8.0"
+    "estraverse": "~1.8.0",
+    "esprima": "~1.2.2",
   }
 }

@@ -29,4 +29,3 @@ function replaceIsNaN(node) {
 }
 
 console.log(res);
-
