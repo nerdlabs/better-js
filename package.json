@@ -1,0 +1,11 @@
+{
+  "name": "better-js",
+  "version": "1.0.0",
+  "description": "Transpiler for the good parts (tm)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nerdlabs Team <nerds@nerdlabs.it>",
+  "license": "BSD-2-Clause"
+}
