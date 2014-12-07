@@ -8,7 +8,7 @@
   },
   "author": "Nerdlabs Team <nerds@nerdlabs.it>",
   "license": "BSD-2-Clause",
-  "devDependencies": {
+  "dependencies": {
     "escodegen": "~1.4.1",
     "estraverse": "~1.8.0"
   }

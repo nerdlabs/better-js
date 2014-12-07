@@ -18,7 +18,7 @@ estraverse.traverse(ast, {
 var res = escodegen.generate(ast);
 
 
-function replaceIsNaN (node) {
+function replaceIsNaN(node) {
   node.callee = {
     type: 'MemberExpression',
     computed: false,
