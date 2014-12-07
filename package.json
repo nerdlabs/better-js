@@ -7,5 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nerdlabs Team <nerds@nerdlabs.it>",
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "esprima": "~1.2.2",
+    "escodegen": "~1.4.1"
+  }
 }
