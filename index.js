@@ -9,7 +9,7 @@ var ast = esprima.parse(source);
 
 estraverse.traverse(ast, {
   enter: function(node) {
-    if (node.type === 'CallExpression') {
+    if (node.type === 'CallExpression' && node.callee.name === 'isNaN') {
       node = replaceIsNaN(node);
     }
   }
