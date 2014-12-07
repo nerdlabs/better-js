@@ -49,10 +49,10 @@ estraverse.traverse(ast, {
   enter: function(node) {
     var scope = [];
     if (Array.isArray(node.body)) {
-      scope.push.apply(scope, getScopeIdentifiers(node.body));
+      scope = scope.concat(getScopeIdentifiers(node.body));
     }
     if (isFunction(node)) {
-      scope.push.apply(scope, getArguments(node));
+      scope = scope.concat(getArguments(node));
     }
     scopes.push(scope);
 
