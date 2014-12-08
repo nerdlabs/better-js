@@ -6,3 +6,5 @@ function test (toTest) {
 }
 
 "foo".charCodeAt(0);
+
+String.fromCharCode(65);
