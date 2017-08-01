@@ -22,4 +22,4 @@ console.log('foo');
 [2]: https://img.shields.io/coveralls/nerdlabs/better-js.svg
 [3]: https://coveralls.io/r/nerdlabs/better-js
 [4]: http://nerdlabs.github.io/better-js/docs/
-[5]: http://visionmedia.github.io/mocha/
+[5]: http://mochajs.org/
